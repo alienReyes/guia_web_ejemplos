@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  #parrafo--ejemplo {
+  color:#FF0000;
+  font-size: 25px;
+  cursor:pointer;
+  }
+  </style>
+
+</head>
+<body>
+  <p id="parrafo--ejemplo">Hola, soy un parrafo</p>
+
+  <script type="text/javascript">
+  var p = document.getElementById('parrafo--ejemplo');
+  p.addEventListener('click', function(event) {
+    p.innerHTML = 'le picaste';
+  });
+  </script>
+</body>
+</html>
